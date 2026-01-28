@@ -1,7 +1,7 @@
 // Method 1
 /*module greyCounter(
   input clk, rst,
-  output [3:0] greyCnt
+  output [3:0] Qout
 );
   
   reg [3:0] counter;
@@ -12,7 +12,7 @@
     else counter <= counter + 1;    
   end
   
-  assign greyCnt = {counter[3],
+  assign Qout = {counter[3],
                     counter[3] ^ counter[2],
                     counter[2] ^ counter[1],
                     counter[1] ^ counter[0] };
@@ -46,3 +46,4 @@ module greyCounter(
   
   
 endmodule
+
