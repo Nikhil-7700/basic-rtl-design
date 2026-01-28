@@ -3,11 +3,11 @@
 module tb;
   
   logic clk, rst;
-  logic greyCnt;
+  logic Qout;
   
   greyCounter dut(
     .clk(clk), .rst(rst),
-    .greyCnt(greyCnt)
+    .Qout(Qout)
   );
   
   initial begin
@@ -33,4 +33,5 @@ module tb;
     $finish();
   end
   
+
 endmodule
